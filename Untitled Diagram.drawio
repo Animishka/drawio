@@ -1,98 +1,129 @@
-<mxfile host="app.diagrams.net" modified="2023-06-28T12:14:46.659Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="uZJ4WAn2VukP6eUYtl8V" version="21.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-28T14:35:41.784Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Safari/605.1.15" etag="g6-QunodCM0xCOJ3wl9W" version="21.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1789" dy="1213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="237" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="g_d.py" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="40" y="160" width="310" height="190" as="geometry">
-            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-5" value="bash_command=&quot;... /common_package/&#xa;self_served_dags/automation/&#xa;dag_generator.py&quot;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
-          <mxGeometry y="26" width="310" height="68" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--5" value="Description: DAG с BashOperator, который запускает&#xa;python script по созданию DAGs на &#xa;основании config,yaml" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
-          <mxGeometry y="94" width="310" height="96" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="input from DA" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="820" y="300" width="280" height="250" as="geometry">
-            <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--7" value="self_served_dags/sql_files/&#xa;{название последовательности}/&#xa;transformation/{file}.sql" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="26" width="280" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--8" value="self_served_dags/config.yaml" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="80" width="280" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-0" value="self_served_dags/sql_files/&#xa;{название последовательности}/tests/&#xa;{название теста}.sql" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--6">
-          <mxGeometry y="110" width="280" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--10" value="Description: Данные от Аналитика, на &#xa;основании которых будет строиться &#xa;объект DAG  - находятся в репозитории &#xa;Airflow на GitHub. Добавляюсь только через &#xa;PR с аппрувом DE." style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="170" width="280" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--13" target="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-0" target="WCT4jnrXkZ5qqszl1rrF-66">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="loader.py" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="470" y="160" width="270" height="120" as="geometry">
-            <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-0" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1310" y="140" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1326" y="240" as="targetPoint" />
+            <mxPoint x="1402" y="424" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-14" value="Description: используется в генерировании&#xa;DAGs как скрипт, запускаемый в &#xa;BashOperator. Пишет в BigQuery. &#xa;Используется SQL code от DA." style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=none;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--13">
-          <mxGeometry y="26" width="270" height="94" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="dag_generator.py" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="400" y="530" width="280" height="160" as="geometry">
-            <mxRectangle x="360" y="430" width="160" height="26" as="alternateBounds" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-27" value="reject" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WCT4jnrXkZ5qqszl1rrF-23">
+          <mxGeometry x="0.0805" y="-4" relative="1" as="geometry">
+            <mxPoint x="30" y="64" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--18" value="get_dag_file()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="26" width="280" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--22" value="del_not_in_config_dags()" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;flipV=0;flipH=1;glass=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="52" width="280" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--24" value="Description: генерирует файлы DAGs  &#xa;dags/self_served_{dag_name}.py&#xa;на основании config.yaml" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="82" width="280" height="78" as="geometry" />
-        </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.008;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=entityRelationEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hmMBkn16lNXGKNmiFiRz-5" target="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="340" as="sourcePoint" />
-            <mxPoint x="240" y="290" as="targetPoint" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-40" target="WCT4jnrXkZ5qqszl1rrF-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1960" y="610" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="380" y="380" />
-              <mxPoint x="390" y="270" />
-              <mxPoint x="390" y="270" />
+              <mxPoint x="1620" y="424" />
+              <mxPoint x="1620" y="670" />
+              <mxPoint x="1940" y="670" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-31" value="execute" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hmMBkn16lNXGKNmiFiRz-8">
-          <mxGeometry x="0.0189" y="1" relative="1" as="geometry">
-            <mxPoint x="5" as="offset" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-44" value="approve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WCT4jnrXkZ5qqszl1rrF-29">
+          <mxGeometry x="-0.261" y="3" relative="1" as="geometry">
+            <mxPoint x="-53" y="-207" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--7" target="zkfFHV4jXpPFQw0GAbJ--13">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-33" value="airflow server" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1660" y="310" width="560" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-34" target="WCT4jnrXkZ5qqszl1rrF-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.008;entryY=0.074;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--8" target="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-34" value="DAG&amp;nbsp;&lt;br&gt;generate_ss_dags" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1730" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-35" target="WCT4jnrXkZ5qqszl1rrF-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.074;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hmMBkn16lNXGKNmiFiRz-0" target="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-35" value="dag_generator.py" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1885" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-37" value="loader.py" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2050" y="342.5" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-40" value="DE approvement" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1396" y="404" width="138" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-47" target="WCT4jnrXkZ5qqszl1rrF-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hmMBkn16lNXGKNmiFiRz-27" target="zkfFHV4jXpPFQw0GAbJ--22">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-47" value="Airflow&lt;br&gt;Scheduler" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1680" y="444" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.217;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-51" target="WCT4jnrXkZ5qqszl1rrF-58">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-27" value="удаляет ранее сгенерированные файлы DAGs, которые отсутствуют в актуальной версии config.yaml" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="650" width="140" height="110" as="geometry" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-51" value="config.yaml" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1844" y="469" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="hmMBkn16lNXGKNmiFiRz-29" target="zkfFHV4jXpPFQw0GAbJ--18">
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.217;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="WCT4jnrXkZ5qqszl1rrF-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1990" y="470" as="sourcePoint" />
+            <mxPoint x="1940.0800000000004" y="406.11699999999996" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1990" y="434" />
+              <mxPoint x="1939" y="434" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-53" value="query.sql" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1950" y="466" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-57" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1830" y="454" width="220" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=20;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="WCT4jnrXkZ5qqszl1rrF-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2092" y="401" as="sourcePoint" />
+            <mxPoint x="2131" y="484" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2092" y="414" />
+              <mxPoint x="2131" y="414" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-64" value="generated dags" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WCT4jnrXkZ5qqszl1rrF-63">
+          <mxGeometry x="0.3766" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-58" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1870" y="327" width="320" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-60" value="dags" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2110" y="490" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1465" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-66" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;new commit&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;config.yaml&lt;br&gt;+ sql file&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1400" y="180" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-67" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="WCT4jnrXkZ5qqszl1rrF-66">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WCT4jnrXkZ5qqszl1rrF-70" target="WCT4jnrXkZ5qqszl1rrF-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hmMBkn16lNXGKNmiFiRz-29" value="основная функция в модуле, которая вызывается в цикле на каждый конфиг DAG, который предусмотрел DA в файле config.yaml" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="510" width="140" height="110" as="geometry" />
+        <mxCell id="WCT4jnrXkZ5qqszl1rrF-70" value="GitHub PR" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1405" y="296" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
